@@ -1,0 +1,145 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #e1d5f0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #c6a9eb;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav li {
+  float: left;
+}
+
+nav li:last-child {
+  float: right;
+}
+
+nav li img {
+  width: 100px;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  border-bottom: 2px solid black;
+}
+
+.box {
+  border: 3px solid #8251c2;
+  border-radius: 25px;
+  margin: 50px;
+}
+
+.box:first-child {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row-reverse wrap-reverse;
+  align-items: stretch;
+}
+
+.card {
+  flex: 0 0 20%;
+  margin: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  max-width: 100%;
+}
+
+h1 > span {
+  color: blue;
+}
+
+.card:first-child h1,
+.card:last-child h1 {
+  color: #8251c2;
+}
+
+.card:nth-child(4) {
+  font-size: 16px;
+}
+
+.card:nth-child(4) p {
+  word-spacing: 2px;
+}
+
+footer ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #c6a9eb;
+  bottom: 0;
+}
+
+footer li {
+  display: inline;
+}
+
+label {
+  text-transform: uppercase;
+  color: darkgrey;
+}
+
+input {
+  width: 90%;
+  height: 20px;
+  align-content: center;
+  background-color: #eceded;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+form {
+  padding: 50px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+button {
+  background-color: #8251c2;
+  color: white;
+  text-transform: uppercase;
+  width: 250px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  nav li {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  nav {
+    margin-bottom: 300px;
+  }
+}
